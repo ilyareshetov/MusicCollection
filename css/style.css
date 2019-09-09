@@ -1,0 +1,334 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #F8EACF;
+    color: #356847;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    display: inline-block;
+    background: #356847; 
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 5vh;
+    position: relative;
+}
+
+header img{
+    height: 100%;  
+    display: inline-block;
+}
+
+input, textarea{
+    width: 15vw;
+	font-size: 13px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	background: #F6F6f6;   
+    color: #356847;
+    font-weight: bold;
+}
+
+
+header input {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%); 
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+header ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    right: 0;
+    margin: 0px;
+}
+
+header li {
+    float: left;
+    margin-right: 1vw;
+}
+
+header li a{
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+}
+
+header li:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);   
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);     
+}
+
+#menu {
+    float: right;
+    display: inline-block;
+    height: 20px;
+}
+
+.item {
+    float: left;
+    width: 21%;
+    margin: 5px 1%; 
+    border: 2px solid #6a2121;
+    padding: 5px;
+    text-align: center;
+    height: 50vh;
+    overflow-y: scroll;
+    background: white;
+    color: #6a2121;
+}
+
+.itemImg{
+    width: 90%;
+    height: 50%;
+    display: inline-block;
+}
+.itemA{
+    text-decoration: none;
+}
+
+.itemA .item{
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+    z-index: 2; 
+}
+
+.itemA:hover .item{
+    box-shadow: 0px 0px 10px #000000;
+    z-index: 1;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);   
+}
+
+.item a{
+    text-decoration: underlined;
+    color: #6a2121;
+    font-weight: bold;
+}
+
+.float {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+#menu li {
+    float: left;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.formBlock{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.formBlock form{
+    padding: 20px;
+    width: 33vw;
+    border: 2px solid #769295;   
+    display: inline-block;
+    text-align: left;
+	font-weight: bold;
+}
+.formBlock input{
+    margin: 5px 0;
+}
+
+input[type="submit"], input[type="button"]{
+    cursor: pointer;
+    background: #769295;
+    color: white;
+}
+
+
+input[type="submit"]:hover, input[type="button"]:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);   
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);     
+}
+
+input[type="button"]{
+    width: 11vw;
+}
+
+.buttons {
+    margin-left: 1%;
+}
+
+.spButton{
+    width: 15vw;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+    cursor: pointer;
+    background: #769295; 
+    font-weight: bold;
+    display: inline-block;
+}
+
+.spButton a{
+    text-decoration: none;
+	font-size: 13px;
+    color: white; 
+}
+
+.spButton:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);   
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);     
+}
+
+.text{
+    padding: 0 1%;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    padding-right: 20px;
+}
+
+#sortedForm {
+    text-align: center;
+}
+
+#sortedForm input {
+    width: 10px;
+}
+
+.field {
+    clear:both;
+    text-align:left;
+    line-height:25px;
+}
+.field label {
+
+    padding-right:10px;
+}
+
+.mainSort {
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+.artist {
+    width: 20px;
+}
+
+.artistBox {
+    height: 23px;
+    /*display: none;*/
+    /*overflow-y: scroll;*/
+}
+
+ul#menuLeft{
+    left: 0;
+    list-style: none;
+}
+
+#menuLeft button:hover{
+        background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+select{
+    color: #356847;
+}
+
+form a{
+    color: #356847;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
+main {
+    width: 100%;
+    text-align: center;
+}
+
+main img{
+    height: 300px;
+    width: auto;
+}
